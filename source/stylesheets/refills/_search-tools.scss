@@ -54,7 +54,7 @@
     }
 
     > div {
-      @include box-sizing(border-box);
+      box-sizing: border-box;
       @include transition(border-color);
       background-color: white;
       border-radius: $base-border-radius;
