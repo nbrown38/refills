@@ -1,4 +1,4 @@
-  .refills-header {
+.refills-header {
   @include clearfix;
   background-color: $refills-hero-background;
   clear: both;
@@ -9,13 +9,13 @@
 
   @include media($refills-medium-screen) {
     margin-bottom: 4em;
-    padding: 6em 0 10em;
+    padding: 6em 0 8em;
   }
 
   @include media($refills-large-screen) {
     border-bottom: 2px solid darken($refills-hero-background, 5%);
     margin-bottom: 4em;
-    padding: 6em 0 11em 0;
+    padding: 6em 0 8em 0;
   }
 
   .refills-logo {
@@ -88,14 +88,25 @@
     @include refills-inset;
     border-radius: 30px;
     color: darken(desaturate($refills-logo-color, 50%), 15%);
-    display: inline;
+    display: inline-block;
     font-family: $refills-narrow-sans;
     font-size: 0.8em;
     font-weight: 400;
+    margin-bottom: 4em;
     padding: 0.5em 1.4em;
 
     @include media($refills-large-screen) {
       font-size: 0.8em;
     }
+  }
+
+  .empties-banner {
+    background: #F9FFB9;
+    border-radius: 2em;
+    box-shadow: 0 2px 0px #E3E8AA;
+    color: #B7B770;
+    display: inline-block;
+    font-family: $refills-narrow-sans;
+    padding: 1em 2em;
   }
 }
